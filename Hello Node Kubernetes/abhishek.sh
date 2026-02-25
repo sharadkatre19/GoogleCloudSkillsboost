@@ -80,6 +80,7 @@ echo
 # Step 5: Create GKE cluster
 echo "${YELLOW}${BOLD}Step 5: Creating GKE cluster${NC}"
 export ZONE=us-central1-c
+gcloud config set project qwiklabs-gcp-02-639fa8a7d8a2
 gcloud container clusters create hello-world \
     --zone="$ZONE" \
     --num-nodes=2 \
