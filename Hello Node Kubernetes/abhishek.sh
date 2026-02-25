@@ -79,7 +79,7 @@ echo
 
 # Step 5: Create GKE cluster
 echo "${YELLOW}${BOLD}Step 5: Creating GKE cluster${NC}"
-export ZONE=$(gcloud config get-value compute/zone)
+export ZONE=us-central1-c
 gcloud container clusters create hello-world \
     --zone="$ZONE" \
     --num-nodes=2 \
